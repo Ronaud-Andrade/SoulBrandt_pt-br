@@ -1,0 +1,10 @@
+# Nunca enviar arquivos do jogo ou gerados a partir dele
+*.dcx
+*.tpf
+*.ccm
+*.msgbnd
+*.drb
+*.dll
+PS3_GAME/
+mods/
+__pycache__/
