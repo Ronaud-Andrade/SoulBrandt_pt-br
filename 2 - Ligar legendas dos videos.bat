@@ -1,17 +1,15 @@
 @echo off
 chcp 65001 >nul
-title Traducao PT-BR - legendas dos videos
+title Traducao PT-BR de Demon's Souls - ligar legendas
 cd /d "%~dp0"
-set "PY="
-if exist "..\PT-BR\python\python.exe" set "PY=..\PT-BR\python\python.exe"
-if not defined PY where py >nul 2>nul && set "PY=py -3"
-if not defined PY where python >nul 2>nul && set "PY=python"
-if not defined PY (
-  echo Nao achei o Python. Coloque esta pasta ao lado da pasta PT-BR da traducao,
-  echo dentro da pasta do Soulbrandt.exe, ou instale o Python 3.
-  pause
-  exit /b 1
-)
-%PY% -I "%~dp0converter_ptbr_mod.py" legendas %*
+set "PACOTE="
+if exist "%~dp0PT-BR\python\python.exe" set "PACOTE=%~dp0PT-BR"
+if not defined PACOTE if exist "%~dp0..\PT-BR\python\python.exe" set "PACOTE=%~dp0..\PT-BR"
+if defined PACOTE goto :temos_pacote
+echo Nao achei a pasta PT-BR da traducao. Rode primeiro o "1 - Instalar traducao PT-BR.bat".
+pause
+exit /b 1
+:temos_pacote
+"%PACOTE%\python\python.exe" -I "%~dp0converter_ptbr_mod.py" legendas --pacote "%PACOTE%"
 echo.
 pause
