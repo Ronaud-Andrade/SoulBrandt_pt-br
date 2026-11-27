@@ -30,7 +30,7 @@ O Soulbrandt 0.2.0 trouxe uma **pasta `mods`**: cada mod é uma pasta que substi
 ## Como usar
 
 1. **Instale a tradução original uma vez**, como manda o LEIA-ME dela: extraia o `PT-BR-Soulbrandt.zip` dentro da pasta do `Soulbrandt.exe`, abra `PT-BR\Tradução PT-BR.exe`, escolha a fonte e clique em **Instalar tradução**. Feche.
-2. **Baixe este repositório** (botão verde **Code > Download ZIP**) e extraia a pasta **dentro da pasta do `Soulbrandt.exe`**, ao lado da pasta `PT-BR`. Fica assim:
+2. **Baixe este repositório** (botão verde **Code > Download ZIP**) e extraia a pasta **dentro da pasta do `Soulbrandt.exe`**, ao lado da pasta `PT-BR`. O nome da pasta não importa (pode ficar `demons-souls-ptbr-soulbrandt-mod-main`). Fica assim:
    ```
    Soulbrandt\
    ├── Soulbrandt.exe
