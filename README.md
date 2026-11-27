@@ -30,12 +30,12 @@ O Soulbrandt 0.2.0 trouxe uma **pasta `mods`**: cada mod é uma pasta que substi
 ## Como usar
 
 1. **Instale a tradução original uma vez**, como manda o LEIA-ME dela: extraia o `PT-BR-Soulbrandt.zip` dentro da pasta do `Soulbrandt.exe`, abra `PT-BR\Tradução PT-BR.exe`, escolha a fonte e clique em **Instalar tradução**. Feche.
-2. **Baixe este repositório** (botão verde **Code > Download ZIP**) e extraia a pasta **dentro da pasta do `Soulbrandt.exe`**, ao lado da pasta `PT-BR`. O nome da pasta não importa (pode ficar `demons-souls-ptbr-soulbrandt-mod-main`). Fica assim:
+2. **Baixe este repositório** (botão verde **Code > Download ZIP**) e extraia a pasta **dentro da pasta do `Soulbrandt.exe`**, ao lado da pasta `PT-BR`. O nome da pasta não importa (pode ficar `SoulBrandt_pt-br-main`). Fica assim:
    ```
    Soulbrandt\
    ├── Soulbrandt.exe
    ├── PT-BR\                 (a tradução original)
-   └── PT-BR-Mod\             (este repositório)
+   └── SoulBrandt_pt-br-main\ (este repositório)
        ├── 1 - Criar mod PT-BR.bat
        ├── 2 - Ligar legendas dos videos.bat
        └── ...
@@ -64,7 +64,7 @@ O mod fica em `mods\PT-BR\PS3_GAME\USRDIR\...`, e o script põe a linha `on PT-B
 O mod sai com a fonte que estava instalada quando você rodou o script (originais ou HD). Para ter **as duas** e trocar pelo menu **Mods**:
 
 1. No `Tradução PT-BR.exe`, clique em **Trocar fonte** e escolha a outra.
-2. Rode no Prompt de Comando, dentro da pasta `PT-BR-Mod`:
+2. Rode no Prompt de Comando, dentro da pasta deste repositório:
    ```
    ..\PT-BR\python\python.exe converter_ptbr_mod.py mod --so-fontes --nome "PT-BR Fontes originais"
    ```
